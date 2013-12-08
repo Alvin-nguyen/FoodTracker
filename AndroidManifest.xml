@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alvinnguyen.foodtracker"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/foodtracker_iron"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.alvinnguyen.foodtracker.MainMenuActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Personal info screen -->
+        <activity
+            android:name="com.alvinnguyen.foodtracker.PersonalInfoActivity"
+            android:label="@string/title_activity_personal_info"
+            android:parentActivityName="com.alvinnguyen.foodtracker.MainMenuActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.alvinnguyen.foodtracker.MainMenuActivity" />
+        </activity>
+
+        <!-- Personal info editing screen -->
+        <activity
+            android:name="com.alvinnguyen.foodtracker.EditPersonalInfoActivity"
+            android:label="@string/title_activity_edit_personal_info"
+            android:parentActivityName="com.alvinnguyen.foodtracker.PeronalInfoActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.alvinnguyen.foodtracker.PeronalInfoActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.alvinnguyen.foodtracker.StartActivity"
+            android:label="@string/title_activity_start"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.alvinnguyen.foodtracker.PantryActivity"
+            android:label="@string/title_activity_pantry"
+            android:parentActivityName="com.alvinnguyen.foodtracker.MainMenuActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.alvinnguyen.foodtracker.MainMenuActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.alvinnguyen.foodtracker.PantryAddItemActivity"
+            android:label="@string/title_activity_pantry_add_item"
+            android:parentActivityName="com.alvinnguyen.foodtracker.PantryActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.alvinnguyen.foodtracker.PantryActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.alvinnguyen.foodtracker.ViewItemActivity"
+            android:label="@string/title_activity_view_item"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.alvinnguyen.foodtracker.JournalActivity"
+            android:label="@string/title_activity_journal"
+            android:parentActivityName="com.alvinnguyen.foodtracker.MainMenuActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.alvinnguyen.foodtracker.MainMenuActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.alvinnguyen.foodtracker.JournalAddItem"
+            android:label="@string/title_activity_journal_add_item"
+            android:parentActivityName="com.alvinnguyen.foodtracker.JournalActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.alvinnguyen.foodtracker.JournalActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.alvinnguyen.foodtracker.AnalysisActivity"
+            android:label="@string/title_activity_analysis"
+            android:parentActivityName="com.alvinnguyen.foodtracker.MainMenuActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.alvinnguyen.foodtracker.MainMenuActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.alvinnguyen.foodtracker.AnalysisTrendsActivity"
+            android:label="@string/title_activity_analysis_trends"
+            android:parentActivityName="com.alvinnguyen.foodtracker.AnalysisActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.alvinnguyen.foodtracker.AnalysisActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.alvinnguyen.foodtracker.RecommenderActivity"
+            android:label="@string/title_activity_recommender"
+            android:parentActivityName="com.alvinnguyen.foodtracker.RecommenderActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.alvinnguyen.foodtracker.MainMenuActivity" />
+        </activity>
+    </application>
+
+</manifest>

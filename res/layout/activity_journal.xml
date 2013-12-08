@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".JournalActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/journal_choose_date"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Choose Date" />
+
+        <EditText
+            android:id="@+id/journal_date"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="right"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="3"
+                    android:background="#919191"
+                    android:textColor="#FFFFFF"
+                    android:text="Breakfast"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <Button
+                    android:id="@+id/journal_add_breakfast"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:onClick="addToJournal"
+                    android:text="+" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/journal_breakfast_list"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/boarder_ui" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/journal_breakfast_empty"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="No Items Found" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="3"
+                    android:background="#919191"
+                    android:textColor="#FFFFFF"
+                    android:text="Lunch"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <Button
+                    android:id="@+id/journal_add_lunch"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:onClick="addToJournal"
+                    android:text="+" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/journal_lunch_list"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/boarder_ui" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/journal_lunch_empty"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="No Items Found" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="3"
+                    android:background="#919191"
+                    android:textColor="#FFFFFF"
+                    android:text="Dinner"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <Button
+                    android:id="@+id/journal_add_dinner"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:onClick="addToJournal"
+                    android:text="+" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/journal_dinner_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boarder_ui" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/journal_dinner_empty"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="No Items Found" />
+        </LinearLayout>
+
+</LinearLayout>

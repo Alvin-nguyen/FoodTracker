@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FoodTracker</string>
+    <string name="action_settings">Settings</string>
+    <string name="personal_info">Personal Information</string>
+    <string name="journal">Journal</string>
+    <string name="analysis">Analysis</string>
+    <string name="pantry">Pantry</string>
+    <string name="recommender">Recommender</string>
+
+    <string name="title_activity_personal_info">Personal Information</string>
+    <string name="title_activity_edit_personal_info">Editing Personal Info</string>
+    <string name="title_activity_start">Welcome!</string>
+    <string name="title_activity_pantry">Pantry</string>
+    <string name="title_activity_pantry_add_item">Add to Pantry</string>
+    <string name="title_activity_view_item">Food Information</string>
+    <string name="title_activity_journal">Journal</string>
+    <string name="title_activity_journal_add_item">Add to Journal</string>
+    <string name="title_activity_analysis">Analysis</string>
+    <string name="title_activity_analysis_trends">Analysis Graphs</string>
+    <string name="title_activity_recommender">Recommendations</string>
+    
+    
+    <string-array name="sex_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="activity_array">
+        <item>Sedentary</item>
+        <item>Light</item>
+        <item>Moderate</item>
+        <item>High</item>
+        <item>Extraneous</item>
+    </string-array>
+    <string-array name="height_feet_array">
+        <item>3\'</item>
+        <item>4\'</item>
+        <item>5\'</item>
+        <item>6\'</item>
+        <item>7\'</item>
+    </string-array>
+    <string-array name="height_inches_array">
+        <item>0\"</item>
+        <item>1\"</item>
+        <item>2\"</item>
+        <item>3\"</item>
+        <item>4\"</item>
+        <item>5\"</item>
+        <item>6\"</item>
+        <item>7\"</item>
+        <item>8\"</item>
+        <item>9\"</item>
+        <item>10\"</item>
+        <item>11\"</item>
+    </string-array>
+    <string-array name="analysis_array">
+        <item>Calories</item>
+        <item>Protein</item>
+        <item>Total Fat</item>
+        <item>Carbs</item>
+        <item>Fiber</item>
+        <item>Sugar</item>
+        <item>Calcium</item>
+        <item>Iron</item>
+        <item>Sodium</item>
+        <item>Vitamin C</item>
+        <item>Vitamin A</item>
+        <item>Cholesterol</item>
+    </string-array>
+
+
+
+</resources>

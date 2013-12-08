@@ -1,0 +1,108 @@
+<resources>
+    <declare-styleable name="zeitdata.charts.view.XYChart">
+        <!--
+            The label of the graph, centered at the top of the chart.
+            @attr description
+        -->
+        <attr name="chartLabel" format="string"/>
+        <!--
+            The text color of the label that appears at the top of the chart, for
+            example <code>#000000</code>
+            @attr description
+        -->
+        <attr name="chartLabelColor" format="color"/>
+        <!--
+            the text size of the label that appears at the top of the chart
+            @attr description
+        -->
+        <attr name="chartLabelSize" format="integer"/>
+        <!--
+            the text color of the grid labels, for example <code>#000000</code>
+            @attr description
+        -->
+        <attr name="gridLabelColor" format="color"/>
+        <!--
+            the text size of the grid labels
+            @attr description
+        -->
+        <attr name="gridLabelSize" format="integer"/>
+        <!--
+            the length of the tick marks extending from the axis to the corresponding grid label
+            @attr description
+        -->
+        <attr name="gridLabelTickLength" format="integer"/>
+        <!--
+            the color of the grid lines, for example <code>#000000</code>
+            @attr description
+        -->
+        <attr name="gridLineColor" format="color"/>
+        <!--
+            <code>true</code> if the grid lines should be visible, <code>false</code> otherwise
+            @attr description
+        -->
+        <attr name="gridLinesVisible" format="boolean"/>
+        <!--
+            the unparsed string of numeric data to be rendered on the chart - used for prototyping in preview mode
+            @attr description
+        -->
+        <attr name="numericDataPrototype" format="string"/>
+        <!--
+            the color of the x-axis, for example <code>#000000</code>
+            @attr description
+        -->
+        <attr name="xAxisColor" format="color"/>
+        <!--
+            the text label to be centered horizontally below the x-axis
+            @attr description
+        -->
+        <attr name="xAxisLabel" format="string"/>
+        <!--
+            the color of the x-axis label, for example <code>#000000</code>
+            @attr description
+        -->
+        <attr name="xAxisLabelColor" format="color"/>
+        <!--
+            the text size of the x-axis label
+            @attr description
+        -->
+        <attr name="xAxisLabelSize" format="integer"/>
+        <!--
+            whether or not the x-axis should be visible
+            @attr description
+        -->
+        <attr name="xAxisVisible" format="boolean"/>
+        <!--
+            the color of the y-axis, for example <code>#000000</code>
+            @attr description
+        -->
+        <attr name="yAxisColor" format="color"/>
+        <!--
+            the text label to be centered vertically to the left of the y-axis
+            @attr description
+        -->
+        <attr name="yAxisLabel" format="string"/>
+        <!--
+            the color of the y-axis label, for example <code>#000000</code>
+            @attr description
+        -->
+        <attr name="yAxisLabelColor" format="color"/>
+        <!--
+            the text size of the y-axis label
+            @attr description
+        -->
+        <attr name="yAxisLabelSize" format="integer"/>
+        <!--
+            whether or not the y-axis should be visible
+            @attr description
+        -->
+        <attr name="yAxisVisible" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="zeitdata.charts.view.XYChart.series">
+        <!--
+            the width (and height - all symbols are drawn within the bounds of a square) of
+            the symbols rendered at data points on the chart
+            @attr description
+        -->
+        <attr name="symbolSize" format="float"/>
+    </declare-styleable>
+</resources>
